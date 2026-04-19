@@ -1,0 +1,65 @@
+﻿# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+
+# Virtual environments
+venv/
+.venv/
+.venv_api/
+env/
+
+# Logs
+*.log
+logs/
+
+# Local env files
+.env
+.env.*
+!.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+backend/.env
+backend/.env.*
+
+# Streamlit artifacts
+.streamlit/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Frontend artifacts
+frontend/node_modules/
+frontend/dist/
+frontend/.vercel/
+
+# Local datasets and generated training artifacts
+Dataset/
+models/training_log.csv
+models/training_results.txt
+models/history.json
+models/live_metrics.json
+models/plots/
+
+# Keep trained model checkpoint tracked for deployment
+!models/
+!models/best_model.pt
+
+# Temp files
+*.tmp
+*.temp
