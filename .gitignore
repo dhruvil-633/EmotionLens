@@ -1,4 +1,4 @@
-﻿# OS / editor
+# OS / editor
 .DS_Store
 Thumbs.db
 .vscode/
@@ -34,9 +34,7 @@ frontend/.env.*
 !frontend/.env.example
 backend/.env
 backend/.env.*
-
-# Streamlit artifacts
-.streamlit/
+!backend/.env.example
 
 # Build artifacts
 build/
@@ -50,15 +48,15 @@ frontend/.vercel/
 
 # Local datasets and generated training artifacts
 Dataset/
-models/training_log.csv
-models/training_results.txt
-models/history.json
-models/live_metrics.json
-models/plots/
+backend/models/training_log.csv
+backend/models/training_results.txt
+backend/models/history.json
+backend/models/live_metrics.json
+backend/models/plots/
 
 # Keep trained model checkpoint tracked for deployment
-!models/
-!models/best_model.pt
+!backend/models/
+!backend/models/best_model.pt
 
 # Temp files
 *.tmp

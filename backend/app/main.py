@@ -1,4 +1,4 @@
-﻿import base64
+import base64
 import os
 import pathlib
 import threading
@@ -65,7 +65,7 @@ class SessionStore:
 
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-MODEL_PATH = ROOT / 'models' / 'best_model.pt'
+MODEL_PATH = ROOT / 'backend' / 'models' / 'best_model.pt'
 
 app = FastAPI(title='EmotionLens API', version='1.0.0')
 

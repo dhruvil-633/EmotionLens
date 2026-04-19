@@ -1,10 +1,13 @@
-﻿services:
+services:
   - type: web
     name: emotionlens-api
     env: python
     plan: free
-    buildCommand: pip install -r backend/requirements.txt
-    startCommand: uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: FRONTEND_ORIGIN
         value: https://your-vercel-app.vercel.app
+      - key: PYTHON_VERSION
+        value: "3.11"
